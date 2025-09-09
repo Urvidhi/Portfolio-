@@ -1,0 +1,230 @@
+ body {
+            font-family: 'Inter', sans-serif;
+            background-color: #3f1D38; /* Custom dark purplish-brown background */
+            color: #FfD6A5; /* Custom light yellow-orange text */
+        }
+        .accent-color {
+            color: #AF5279; /* Custom medium purplish-pink accent */
+        }
+        .bg-accent {
+            background-color: #AF5279; /* Custom medium purplish-pink accent background */
+        }
+        .hover-accent:hover {
+            color: #C86C90; /* Slightly lighter accent on hover */
+        }
+        .border-accent {
+            border-color: #AF5279; /* Custom medium purplish-pink accent border */
+        }
+        .nav-link {
+            transition: color 0.3s, border-bottom-color 0.3s;
+            border-bottom: 2px solid transparent;
+            color: #FfD6A5; /* Light text for nav links */
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #AF5279; /* Accent on hover/active */
+            border-bottom-color: #AF5279;
+        }
+        .header-social-link { /* Unified class for social links in header */
+            border: 1px solid #AF5279; /* Accent color border */
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* Fully rounded */
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            color: #FfD6A5; /* Default text color */
+            margin-left: 1rem; /* Spacing between nav links and social links */
+        }
+        .header-social-link:hover {
+            background-color: #AF5279; /* Fill with accent color on hover */
+            color: #FFFFFF; /* White text on hover */
+            border-color: #AF5279; /* Keep accent border */
+        }
+        .project-card, .skill-card, .skill-category-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for all cards */
+            background-color: #4f2D48; /* Slightly lighter custom background for cards */
+            color: #FfD6A5;
+            border: 1px solid #6c4e66; /* Muted border */
+        }
+        .project-card:hover, .skill-card:hover, .skill-category-card:hover {
+            transform: scale(1.02) translateY(-5px); /* Slightly scale up and move up */
+            box-shadow: 0 0 15px 3px rgba(175, 82, 121, 0.4); /* Accent glow on hover */
+        }
+        .project-image-container {
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio (height / width * 100%) */
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem 0.5rem 0 0; /* Rounded top corners */
+        }
+        .project-image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+        .skill-category-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            position: relative; /* Added for circle positioning */
+        }
+        .skill-category-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #FfD6A5; /* Light text for headings */
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .skill-category-card h3 .icon {
+            font-size: 1.5rem; /* Larger icon for category heading */
+            color: #AF5279; /* Accent color for category icons */
+        }
+        .skill-category-card .skill-item {
+            background-color: #5f3d58; /* Another shade of custom purple for skill items */
+            color: #FfD6A5;
+            padding: 0.4rem 0.8rem;
+            border-radius: 9999px; /* Full rounded */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 500; /* font-medium */
+            margin: 0.25rem;
+            display: inline-flex; /* Use inline-flex for icon alignment */
+            align-items: center;
+            gap: 0.4rem; /* Space between icon and text */
+        }
+        .skill-item .icon {
+            font-size: 1rem; /* Smaller icon for individual skills */
+            color: #AF5279; /* Accent color for skill icons */
+        }
+        /* Styling for the timeline items in Education */
+        .education-timeline-container {
+            position: relative;
+            padding-left: 5rem; /* Space for the line and logo cards */
+        }
+        .education-timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 2.25rem; /* Center of the 4rem logo card + 0.25rem offset */
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #AF5279; /* Accent color for the line */
+        }
+        .education-timeline-item {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem; /* Space between items */
+            background-color: #4f2D48; /* Slightly lighter custom background for items */
+            border: 1px solid #6c4e66; /* Muted border */
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .education-timeline-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px 3px rgba(175, 82, 121, 0.4);
+        }
+        .education-timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 2.25rem; /* Position of the vertical line (center of logo) */
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #AF5279; /* Accent color for the line */
+        }
+        .education-timeline-item:last-child::before {
+            height: 1.5rem; /* Adjust height of line for last item */
+        }
+        .education-timeline-item .logo-card-container {
+            position: absolute;
+            left: -4rem; /* Position relative to the timeline-container's padding-left */
+            top: 1.5rem; /* Adjust to align with the card content */
+            transform: translateY(-50%); /* Fine-tune vertical centering */
+            flex-shrink: 0;
+            width: 4rem; /* Fixed width for logo card */
+            height: 4rem; /* Fixed height for logo card */
+            border-radius: 0.5rem; /* Slightly rounded logo card */
+            overflow: hidden;
+            background-color: #5f3d58; /* Background for logo card */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #6c4e66;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1; /* Ensure it's above the line */
+        }
+        .education-timeline-item .logo-card-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .education-timeline-item .content {
+            flex-grow: 1;
+            margin-left: 1rem; /* Added margin to push content right of the logo card */
+        }
+        .education-timeline-item .title {
+            font-size: 1.125rem; /* text-lg */
+            font-weight: 600; /* font-semibold */
+            color: #FfD6A5; /* Light text */
+            margin-bottom: 0.25rem;
+        }
+        .education-timeline-item .institution {
+            font-size: 0.875rem; /* text-sm */
+            color: #D6B2C9; /* Medium purplish-gray for institution */
+            margin-bottom: 0.25rem;
+        }
+        .education-timeline-item .dates-grade {
+            font-size: 0.875rem; /* text-sm */
+            color: #D6B2C9; /* Medium purplish-gray for dates/grade */
+            margin-bottom: 0.5rem;
+        }
+        .education-timeline-item .description {
+            font-size: 0.875rem; /* text-sm */
+            color: #E6C8DC; /* Slightly lighter purplish-gray for description */
+        }
+
+        /* Animation for the main heading with burst effect */
+        @keyframes fadeInBurstSlideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px) scale(0.9);
+            }
+            70% {
+                opacity: 1;
+                transform: translateY(0) scale(1.05); /* Burst effect: slightly larger */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1); /* Settle to normal size */
+            }
+        }
+        .animate-fadeInSlideUp {
+            animation: fadeInBurstSlideUp 1s ease-out forwards;
+        }
+
+        /* Typewriter effect */
+        .typewriter-text {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid #AF5279; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+        }
+
+        /* The typing animation */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #AF5279; }
+        }

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhi Yadav | AI/ML & Data Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-[#3f1D38]/90 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold accent-color">Vidhi Yadav</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#summary" class="nav-link">Summary</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="https://github.com/Urvidhi" target="_blank" class="nav-link header-social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/vidhiyadav08" target="_blank" class="nav-link header-social-link">LinkedIn</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-3xl text-FfD6A5">
+                &#9776;
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#4f2D48] shadow-lg">
+            <a href="#summary" class="block py-2 px-6 text-center nav-link">Summary</a>
+            <a href="#projects" class="block py-2 px-6 text-center nav-link">Projects</a>
+            <a href="#skills" class="block py-2 px-6 text-center nav-link">Skills</a>
+            <a href="#experience" class="block py-2 px-6 text-center nav-link">Experience</a>
+            <a href="#education" class="block py-2 px-6 text-center nav-link">Education</a>
+            <a href="https://github.com/Urvidhi" target="_blank" class="block py-2 px-6 text-center nav-link header-social-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/vidhiyadav08" target="_blank" class="block py-2 px-6 text-center nav-link header-social-link">LinkedIn</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Summary Section -->
+        <section id="summary" class="min-h-[60vh] flex flex-col md:flex-row items-center md:justify-between text-center md:text-left">
+            <div class="w-full md:w-2/3 md:pr-8"> <!-- Added pr-8 for spacing on larger screens -->
+                <h1 class="text-4xl md:text-6xl font-bold text-FfD6A5 leading-tight mb-4 animate-fadeInSlideUp">
+                    HI,<br><span id="typewriter-output"></span>
+                </h1>
+                <p class="text-lg md:text-xl text-FfD6A5 max-w-3xl mx-auto md:mx-0 mb-8">
+                    AI/ML B.Tech student with robust proficiency in <strong class="accent-color">Python</strong> for data analysis. Adept at leveraging <strong class="accent-color">Pandas, NumPy, Matplotlib, Seaborn</strong> for data manipulation and visualization. Skilled in developing <strong class="accent-color">interactive dashboards</strong> using <strong class="accent-color">Power BI, Tableau</strong>, and managing <strong class="accent-color">databases</strong> with <strong class="accent-color">MySQL, Excel</strong>. Committed to transforming data into <strong class="accent-color">actionable business intelligence</strong>.
+                </p>
+                <a href="#projects" class="bg-accent text-white font-bold py-3 px-8 rounded-full hover:opacity-90 transition-opacity">View My Work</a>
+            </div>
+            <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 mt-8 md:mt-0 mx-auto overflow-hidden rounded-full border-4 border-accent shadow-lg">
+                <img src="vidhi.jpeg.jpeg" alt="Vidhi Yadav Profile" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-2 text-FfD6A5">Projects Portfolio</h2>
+            <p class="text-center text-FfD6A5 mb-12 max-w-2xl mx-auto">This section showcases my ability to apply theoretical knowledge to practical, real-world scenarios. Each project represents a unique challenge, from real-time data integration to in-depth exploratory analysis, demonstrating my skills in data visualization, API handling, and creating impactful data-driven narratives. Click on a card to explore.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1: CityScape Weather Dynamics -->
+                <div class="project-card rounded-lg overflow-hidden p-6">
+                    <div class="project-image-container">
+                        <img src="weather dash.png" alt="CityScape Weather Dynamics Dashboard" onerror="this.onerror=null;this.src='https://placehold.co/600x337/6c4e66/FfD6A5?text=Image+Not+Found';" class="rounded-t-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-FfD6A5">CityScape Weather Dynamics</h3>
+                    <p class="text-FfD6A5 mb-4">An interactive dashboard providing real-time meteorological data via API integration.</p>
+                    <div class="text-sm text-FfD6A5 mb-4">
+                        <p>&#x2022; Integrated API calls to fetch current weather conditions and forecasts.</p>
+                        <p>&#x2022; Utilized data visualization for intuitive representation of weather patterns.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Streamlit</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">APIs</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Pandas</span>
+                    </div>
+                    <a href="https://bit.ly/4f3GxK3" target="_blank" class="font-semibold accent-color hover-accent hover:underline">View Project &rarr;</a>
+                </div>
+
+                <!-- Project Card 2: Telco Churn Analysis (EDA) -->
+                <div class="project-card rounded-lg overflow-hidden p-6">
+                     <div class="project-image-container">
+                        <img src="telco.jpg" alt="CityScape Weather Dynamics Dashboard" onerror="this.onerror=null;this.src='https://placehold.co/600x337/6c4e66/FfD6A5?text=Image+Not+Found';" class="rounded-t-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-FfD6A5">Telco Churn Analysis (EDA)</h3>
+                    <p class="text-FfD6A5 mb-4">Comprehensive Exploratory Data Analysis to identify key predictors of customer churn.</p>
+                     <div class="text-sm text-FfD6A5 mb-4">
+                        <p>&#x2022; Executed EDA on telecom datasets to identify churn predictors.</p>
+                        <p>&#x2022; Utilized Python (Pandas, Matplotlib, Seaborn) for data cleaning, analysis, and visualization.</p>
+                        <p>&#x2022; Derived actionable insights to predict and mitigate customer attrition.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Pandas</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Matplotlib</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Seaborn</span>
+                    </div>
+                    <a href="https://github.com/Urvidhi/Telco-churn-analysis" target="_blank" class="font-semibold accent-color hover-accent hover:underline">View Project &rarr;</a>
+                </div>
+
+                <!-- Project Card 3: Tribute Dashboard: Ratan Tata -->
+                <div class="project-card rounded-lg overflow-hidden p-6">
+                     <div class="project-image-container">
+                        <img src="ratan tata.png" alt="CityScape Weather Dynamics Dashboard" onerror="this.onerror=null;this.src='https://placehold.co/600x337/6c4e66/FfD6A5?text=Image+Not+Found';" class="rounded-t-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-FfD6A5">Tribute Dashboard: Ratan Tata</h3>
+                    <p class="text-FfD6A5 mb-4">An interactive dashboard visualizing the business and social impact of Ratan Tata.</p>
+                     <div class="text-sm text-FfD6A5 mb-4">
+                        <p>&#x2022; Performed sector-wise impact analysis and sentiment mapping.</p>
+                        <p>&#x2022; Designed dynamic visualizations to convey complex data insights.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Power BI</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Excel</span>
+                        <span class="bg-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Data Modeling</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">DAX</span>
+                    </div>
+                    <a href="https://lnkd.in/gPhK_BkZ" target="_blank" class="font-semibold accent-color hover-accent hover:underline">View Project &rarr;</a>
+                </div>
+
+                 <!-- Project Card 4: ATM transition Dashboard-->
+                <div class="project-card rounded-lg overflow-hidden p-6">
+                     <div class="project-image-container">
+                        <img src="atm.png" alt="ATM-Performance-Analysis-Dashboard" onerror="this.onerror=null;this.src='https://placehold.co/600x337/6c4e66/FfD6A5?text=Image+Not+Found';" class="rounded-t-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-FfD6A5">ATM-Performance-Analysis-Dashboard</h3>
+                    <p class="text-FfD6A5 mb-4">An interactive dashboard showcasing ATM transaction metrics, cost analysis, and uptime performance.</p>
+                     <div class="text-sm text-FfD6A5 mb-4">
+                        <p>&#x2022; Developed a Power BI dashboard to monitor ATM transactions, revenue, and uptime.</p>
+                        <p>&#x2022; Visualized state-wise performance and cost breakdown.</p>
+                        <p>&#x2022; Enabled quick insights through interactive and intuitive design.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Power BI</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Excel</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">DAX</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Power Query </span>
+                    </div>
+                    <a href="http://bit.ly/46r9Eoj" target="_blank" class="font-semibold accent-color hover-accent hover:underline">View Project &rarr;</a>
+                </div>
+
+                <!-- Project Card 5: Finance Dashboard -->
+                 <div class="project-card rounded-lg overflow-hidden p-6">
+                     <div class="project-image-container">
+                        <img src="finance.png" alt="CityScape Weather Dynamics Dashboard" onerror="this.onerror=null;this.src='https://placehold.co/600x337/6c4e66/FfD6A5?text=Image+Not+Found';" class="rounded-t-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-FfD6A5">Finance Analysis Dashboard</h3>
+                    <p class="text-FfD6A5 mb-4">Smart Finance Dashboard – Visualizing Income, Expenses & Savings</p>
+                     <div class="text-sm text-FfD6A5 mb-4">
+                        <p>&#x2022; Developed an interactive Finance Dashboard to track income, expenses, and savings with visual insights.</p>
+                        <p>&#x2022; Features include trend analysis, expense breakdown, and savings allocation for smarter financial decisions.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Power BI</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Excel</span>
+                        <span class="bg-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Data Modeling</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">DAX</span>
+                    </div>
+                    <a href="http://bit.ly/3HyQin1" target="_blank" class="font-semibold accent-color hover-accent hover:underline">View Project &rarr;</a>
+                </div>
+
+                 <!-- Project Card 6: Spotify Dashboard -->
+                  <div class="project-card rounded-lg overflow-hidden p-6">
+                     <div class="project-image-container">
+                        <img src="spotify.png" alt="CityScape Weather Dynamics Dashboard" onerror="this.onerror=null;this.src='https://placehold.co/600x337/6c4e66/FfD6A5?text=Image+Not+Found';" class="rounded-t-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-FfD6A5">Spotify Analysis Dashboard</h3>
+                    <p class="text-FfD6A5 mb-4">Spotify Streaming Insights: Trends, Top Tracks & Artist Performance</p>
+                     <div class="text-sm text-FfD6A5 mb-4">
+                        <p>&#x2022; Developed an interactive Spotify dashboard (Power BI) analyzing 383B+ streams to uncover music trends.</p>
+                        <p>&#x2022; Demonstrated correlations between speechiness, acousticness, and popularity, offering insights for music production strategies.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Power BI</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Excel</span>
+                        <span class="bg-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Data Modeling</span>
+                        <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">DAX</span>
+                    </div>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZDZlYzc1MTEtNmRiOS00YTk5LTlhZTktNDhkYmM3MTgzM2Q2IiwidCI6ImM4YThmYmYxLWVhODQtNDEyNS05MTNmLWE0M2M3YTY4NThmNSJ9" target="_blank" class="font-semibold accent-color hover-accent hover:underline">View Project &rarr;</a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-[#4f2D48] rounded-lg">
+            <h2 class="text-3xl font-bold text-center mb-2 text-FfD6A5">Skills</h2>
+            <p class="text-center text-FfD6A5 mb-12 max-w-2xl mx-auto">A comprehensive overview of my technical and interpersonal capabilities, organized for clarity and easy review.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Languages & Tools Card -->
+                <div class="skill-category-card">
+                    <h3 class="accent-color"><span class="icon">&#x1F4BB;</span> Languages & Tools</h3>
+                    <div class="flex flex-wrap justify-center">
+                        <span class="skill-item"><span class="icon">&#x1F40D;</span> Python</span>
+                        <span class="skill-item"><span class="icon">&#x1F4C8;</span> R</span>
+                        <span class="skill-item"><span class="icon">&#x1F4CA;</span> Power BI</span>
+                        <span class="skill-item"><span class="icon">&#x1F4CA;</span> Tableau</span>
+                        <span class="skill-item"><span class="icon">&#x1F4BE;</span> MySQL</span>
+                        <span class="skill-item"><span class="icon">&#x1F4BE;</span> DBMS</span>
+                        <span class="skill-item"><span class="icon">&#x1F4C4;</span> Excel</span>
+                    </div>
+                </div>
+
+                <!-- Libraries Card -->
+                <div class="skill-category-card">
+                    <h3 class="accent-color"><span class="icon">&#x1F522;</span> Libraries</h3>
+                    <div class="flex flex-wrap justify-center">
+                        <span class="skill-item"><span class="icon">&#x2022;</span> NumPy</span>
+                        <span class="skill-item"><span class="icon">&#x2022;</span> Pandas</span>
+                        <span class="skill-item"><span class="icon">&#x2022;</span> Matplotlib</span>
+                        <span class="skill-item"><span class="icon">&#x2022;</span> Seaborn</span>
+                    </div>
+                </div>
+
+                <!-- Web Development Card -->
+                <div class="skill-category-card">
+                    <h3 class="accent-color"><span class="icon">&#x1F522;</span> Web Development</h3>
+                    <div class="flex flex-wrap justify-center">
+                        <span class="skill-item"><span class="icon">&#x2022;</span> HTML</span>
+                        <span class="skill-item"><span class="icon">&#x2022;</span>CSS</span>
+                        <span class="skill-item"><span class="icon">&#x2022;</span> Javascript</span>
+                        <span class="skill-item"><span class="icon">&#x2022;</span> Bootstrap </span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills Card -->
+                <div class="skill-category-card">
+                    <h3 class="accent-color"><span class="icon">&#x1F91D;</span> Soft Skills</h3>
+                    <div class="flex flex-wrap justify-center">
+                        <span class="skill-item"><span class="icon">&#x2022;</span> Teamwork</span>
+                        <span class="skill-item"><span class="icon">&#x2022;</span> Communication</span>
+                        <span class="skill-item"><span class="icon">&#x2022;</span> Problem Solving</span>
+                        <span class="skill-item"><span class="icon">&#x2022;</span> Creativity</span>
+                    </div>
+                </div>
+
+                <!-- Other Tools Card -->
+                <div class="skill-category-card">
+                    <h3 class="accent-color"><span class="icon">&#x2692;</span> Other Tools</h3>
+                    <div class="flex flex-wrap justify-center">
+                        <span class="skill-item"><span class="icon">&#x1F4D6;</span> Jupyter Notebook</span>
+                        <span class="skill-item"><span class="icon">&#x1F4BB;</span> GitHub</span>
+                        <span class="skill-item"><span class="icon">&#x1F4BB;</span> Visual Studio Code</span>
+                        <span class="skill-item"><span class="icon">&#x1F4BB;</span> Windows</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-FfD6A5">Professional Experience</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="relative border-l-2 border-accent pl-10">
+                    <!-- Experience Item 1 -->
+                    <div class="mb-12">
+                        <div class="absolute w-4 h-4 bg-accent rounded-full -left-2 mt-1.5"></div>
+                        <p class="text-sm text-FfD6A5">July 2024 - August 2024</p>
+                        <h3 class="text-xl font-semibold text-FfD6A5">Python Developer Trainee</h3>
+                        <p class="text-FfD6A5 font-medium">Apptechies - (Mohali)</p>
+                        <ul class="list-disc list-inside mt-2 text-FfD6A5">
+                            <li>Applied Python for data processing and automation.</li>
+                            <li>Practiced writing, testing, and debugging Python code.</li>
+                            <li>Gained hands-on experience with NumPy, Pandas, and Seaborn.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="mb-12">
+                        <div class="absolute w-4 h-4 bg-accent rounded-full -left-2 mt-1.5"></div>
+                        <p class="text-sm text-FfD6A5">August 2025 - Present..</p>
+                        <h3 class="text-xl font-semibold text-FfD6A5">Data Analyst Trainee</h3>
+                        <p class="text-FfD6A5 font-medium">Pisoft Informatics Pvt. Ltd - (Mohali)</p>
+                        <ul class="list-disc list-inside mt-2 text-FfD6A5">
+                            <li>Assisted in data cleaning, preprocessing, and visualization to generate actionable insights.</li>
+                            <li>Worked on Excel, SQL, and Power BI for preparing dashboards and reports</li>
+                            <li>Gained hands-on experience in real-world datasets, improving problem-solving and analytical skills.</li>
+                        </ul>
+                    </div>
+
+                     <!-- Experience Item 3 -->
+                    <div class="mb-12">
+                        <div class="absolute w-4 h-4 bg-accent rounded-full -left-2 mt-1.5"></div>
+                        <p class="text-sm text-FfD6A5">August 2025 - September 2025</p>
+                        <h3 class="text-xl font-semibold text-FfD6A5">Data Analyst Internship </h3>
+                        <p class="text-FfD6A5 font-medium">InnoBytes Services - (Remote)</p>
+                        <ul class="list-disc list-inside mt-2 text-FfD6A5">
+                            <li>Conducted data collection, cleaning, and analysis to support business decision-making.</li>
+                            <li>Designed and built interactive dashboards using Excel and Power BI for performance tracking</li>
+                            <li>Applied SQL and Python for querying and analyzing datasets to uncover key insights.</li>
+                             <li>Collaborated remotely with the team, enhancing reporting accuracy and data-driven strategies.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-FfD6A5">Education</h2>
+            <div class="max-w-3xl mx-auto education-timeline-container">
+                <!-- Education Item: Bachelor's -->
+                <div class="education-timeline-item">
+                    <div class="logo-card-container">
+                        <img src="muk.jpg" alt="JMIETI Logo" onerror="this.onerror=null;this.src='https://placehold.co/64x64/6c4e66/FfD6A5?text=Uni';" class="w-full h-full object-cover">
+                    </div>
+                    <div class="content">
+                        <p class="title">Bachelor of Computer Science Engineering (AI & ML)</p>
+                        <p class="institution">JMIETI Radaur, Kurukshetra University</p>
+                        <p class="dates-grade">July 2022 - July 2026 (Expected) | Grade: 7.5</p>
+                        <p class="description">Currently pursuing my Bachelor of Technology in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning.</p>
+                    </div>
+                </div>
+                <!-- Education Item: Senior Secondary -->
+                <div class="education-timeline-item">
+                    <div class="logo-card-container">
+                        <img src="kvslogo.webp" alt="Kendriya Vidyalaya Logo" onerror="this.onerror=null;this.src='https://placehold.co/64x64/6c4e66/FfD6A5?text=School';" class="w-full h-full object-cover">
+                    </div>
+                    <div class="content">
+                        <p class="title">Senior Secondary Education (PCM with Computer Science)</p>
+                        <p class="institution">Kendriya Vidyalaya No. 4, CBSE - Ambala Cantt, Haryana</p>
+                        <p class="dates-grade">July 2022 | Grade: 65%</p>
+                        <p class="description">Completed my Senior Secondary Education (+2) in PCM with Computer Science.</p>
+                    </div>
+                </div>
+                <!-- Education Item: Secondary (10th) -->
+                <div class="education-timeline-item">
+                    <div class="logo-card-container">
+                        <img src="kvslogo.webp" alt="Kendriya Vidyalaya Logo" onerror="this.onerror=null;this.src='https://placehold.co/64x64/6c4e66/FfD6A5?text=School';" class="w-full h-full object-cover">
+                    </div>
+                    <div class="content">
+                        <p class="title">Secondary Education (10th)</p>
+                        <p class="institution">Kendriya Vidyalaya No. 4, CBSE - Ambala Cantt, Haryana</p>
+                        <p class="dates-grade">July 2020 | Grade: 70.2%</p>
+                        <p class="description">Completed my Secondary Education (10th) from CBSE.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#4f2D48] border-t border-[#6c4e66]">
+        <div class="container mx-auto px-6 py-8 text-center text-FfD6A5">
+            <p class="text-2xl font-bold mb-4 text-FfD6A5">Get in Touch</p>
+            <p class="mb-4">vidhiyadav.874@gmail.com | +91-8816854334</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://linkedin.com/in/vidhiyadav08" target="_blank" class="text-FfD6A5 hover-accent transition-colors">LinkedIn</a>
+                <a href="https://github.com/Urvidhi" target="_blank" class="text-FfD6A5 hover-accent transition-colors">GitHub</a>
+            </div>
+            <p class="mt-8 text-sm">&copy; 2024 Vidhi Yadav. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
